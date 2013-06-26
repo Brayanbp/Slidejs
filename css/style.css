@@ -1,0 +1,17 @@
+*{padding:0;margin:0}
+#wrapper{margin:0 auto;padding:10px;width:800px;border:1px solid #ccc}
+#slide{height:80px;margin:0 auto;overflow:hidden;position:relative;width:460px;*zoom:1;}
+#slide:before,#slide:after{display:table;content:"";line-height:0}
+#slide:after{clear:both}
+.slids{float:left;margin-left:12px;}
+.slids:first-child{margin:0}
+.slids img{display:block;height:80px;width:106px}
+.slids-content{padding-top:10px;height:18px;}
+.slids-content .slids-navs{float:right;height:18px;margin-left:10px;width:40px;}
+.slids-content .slids-navs a{background:url("../img/navs.png") no-repeat;float:left;height:18px;width:18px}
+.slids-content .slids-navs .slids-nleft{background-position:0 0;}
+.slids-content .slids-navs .slids-nleft.disabled{background-position:0 -18px}
+.slids-content .slids-navs .slids-nrigth{background-position:-18px 0;margin-left:4px;}
+.slids-content .slids-navs .slids-nrigth.disabled{background-position:-18px -18px}
+.slids-content .slids-scrollbar{background:#000;float:left;height:2px;margin-top:8px;position:relative}
+.slids-content .slids-uiscroll{background:#000;border-radius:4px;height:10px;left:0;position:absolute;top:-4px}

@@ -1,0 +1,68 @@
+*
+	padding 0
+	margin 0
+#wrapper
+	margin 0 auto
+	padding 10px
+	width 800px
+	border 1px solid #ccc
+
+#slide
+	height 80px
+	margin 0 auto
+	overflow hidden
+	position relative
+	width 460px
+	*zoom 1
+	&:before,&:after
+		display table
+		content ""
+		line-height 0
+	&:after
+		clear both
+.slids
+	float left
+	margin-left 12px
+	&:first-child
+		margin 0
+	img
+		display block
+		height 80px
+		width 106px
+
+/* Plugins */
+.slids-content
+	padding-top 10px
+	height 18px
+	.slids-navs
+		float right
+		height 18px
+		margin-left 10px
+		width 40px
+		a
+			background url("../img/navs.png") no-repeat
+			float left
+			height 18px
+			width 18px
+		.slids-nleft
+			background-position 0 0
+			&.disabled
+				background-position 0 -18px
+		.slids-nrigth
+			background-position -18px 0
+			margin-left 4px
+			&.disabled
+				background-position -18px -18px
+	.slids-scrollbar
+		background #000
+		float left
+		height 2px
+		margin-top 8px
+		position relative
+	.slids-uiscroll
+		background #000
+		border-radius 4px
+		height 10px
+		left 0
+		position absolute
+		top -4px
